@@ -1,0 +1,74 @@
+/* CSS VARIABLES */
+:root
+{
+  --element-shadow-color: rgba(0, 0, 0, 0.185);
+  --f-color-primary: #000;
+}
+
+/* CSS RESET */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* MAIN CONTAINER */
+.container
+{
+  display: grid;
+  grid-template-columns: 2fr 12fr 2fr;
+  grid-template-rows: 1fr 1fr 12fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header" 
+  "tools main main" 
+  "tools main main"
+  "tools main main"
+  "tools main main"
+  ; 
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid black;
+  padding: 0.8rem;
+  
+}
+/* MAIN HEADER */
+#main-header
+{
+  display: flex;
+  background-color: aliceblue;
+  box-shadow: 1px 1px solid var(--element-shadow-color);
+  color: var(--f-color-primary);
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+}
+
+/* TOOLS TAB */
+#tools-nav
+{
+  grid-area: tools;
+  background-color: aquamarine;
+}
+
+/* MAIN CANVAS AREA */
+#main-area
+{
+  grid-area: main;
+  border: 1px solid salmon;
+}
+
+/* MAIN DRAWING CANVAS */
+#main-canvas
+{
+  background-color: bisque;
+  border: 2px solid black;
+  height: 100%;
+  width: 100%;
+}
+
+/* UNIVERSAL FOOTER ELEMENT */
+#universal-footer
+{
+  grid-area: footer;
+  background-color: gray;
+}
