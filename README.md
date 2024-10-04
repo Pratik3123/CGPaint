@@ -1,3 +1,3 @@
-# webpack-template
+# cgPaint
 
-All required initial configuration to get started with webpack
+An Interactive graphic elements plotter with algorithmic overview
