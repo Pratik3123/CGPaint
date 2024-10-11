@@ -48,8 +48,34 @@
 {
   grid-area: tools;
   background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+}
+#tools-nav ul
+{
+  list-style-type: none;
+}
+#paint-tools
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#tools-nav img
+{
+  height: 50px;
+  width: 50px;
+
+  margin: 10px;
+  background-color: aliceblue;
+  border: 1px solid black;
 }
 
+#tools-nav img:hover
+{
+  background-color: aqua;
+}
 /* MAIN CANVAS AREA */
 #main-area
 {
